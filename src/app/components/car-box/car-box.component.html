@@ -1,0 +1,28 @@
+<div class="main-container">
+    <div>
+        <span class="body-type-text">{{car.bodyType.toUpperCase()}}</span>
+    </div>
+    <div [ngStyle]="{display: 'flex'}">
+        <div>
+            <span class="model-name-text">{{car.modelName}}</span>
+        </div>
+        <div [ngStyle]="{marginLeft: '5px'}">
+            <span class="model-type-text">{{car.modelType}}</span>
+        </div>
+    </div>
+    <div class="car-image-container">
+        <img class="car-image" src="../../../assets/images/{{ car.imageUrl }}" />
+    </div>
+    <div [ngStyle]="{display: 'flex', justifyContent: 'center', marginTop: '15px'}">
+        <div [ngStyle]="{marginRight: '15px', cursor: 'pointer'}">
+            <span class="car-box-links">LEARN</span>
+            <img src="../../../assets/icons/chevron-small.svg" alt=""
+                [ngStyle]="{height: '10px', width: '10px', marginLeft: '10px'}">
+        </div>
+        <div [ngStyle]="{cursor: 'pointer'}">
+            <span class="car-box-links">SHOP</span>
+            <img src="../../../assets/icons/chevron-small.svg" alt=""
+                [ngStyle]="{height: '10px', width: '10px', marginLeft: '10px'}">
+        </div>
+    </div>
+</div>

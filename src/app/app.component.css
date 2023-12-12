@@ -1,0 +1,118 @@
+.top-bar-container {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    box-shadow: rgb(38, 57, 77) 0px 10px 10px -10px;
+    position: relative;
+}
+
+.search-cars-input {
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    margin-top: 9px;
+    margin-left: 9px;
+    color: white;
+    background-color: rgb(38, 57, 77);
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/search.svg');
+    background-size: contain;
+}
+
+.cars-container-buttons {
+    width: 280px;
+    display: flex;
+    place-content: flex-end;
+}
+
+.cars-container-buttons-spacer {
+    width: 280px;
+    justify-content: center;
+}
+
+.reverse-chevron-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/chevron-circled.svg');
+    background-size: contain;
+    transform: rotate(180deg);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.chevron-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/chevron-circled.svg');
+    background-size: contain;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.cars-container {
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.active {
+    transition-delay: 0.5s;
+    /* Atrasa a transição para o slide ativo */
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.list-position-points-container {
+    display: flex;
+}
+
+.list-position-points {
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+    background-color: #9C9FA6;
+    margin-right: 2px;
+    opacity: 0.4;
+}
+
+.displayedCar {
+    background-color: black;
+    opacity: 1;
+}
+
+@media (max-width: 1150px) {
+    .cars-container {
+        justify-content: unset;
+        overflow-x: scroll;
+    }
+
+    .cars-container::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .list-position-points-container {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

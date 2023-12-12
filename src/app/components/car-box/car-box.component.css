@@ -1,0 +1,50 @@
+.main-container {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.body-type-text {
+    color: #707070;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.model-name-text {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.model-type-text {
+    color: #707070;
+    font-size: 12px;
+}
+
+.car-image-container {
+    height: 200px;
+    width: 280px;
+    overflow: hidden;
+}
+
+.car-image {
+    margin-top: 10px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-image:hover {
+    transform: scale(1.1);
+}
+
+.car-box-links {
+    font-size: 14px;
+    color: #326BB4;
+    font-weight: bold;
+}
+
+.car-box-links:hover {
+    text-decoration: underline;
+}
