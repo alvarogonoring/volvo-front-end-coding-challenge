@@ -2,7 +2,7 @@
 
 This repository contains the solution for the Volvo Cars front-end coding challenge. The original challenge can be found [here](https://github.com/volvo-cars/god-frontend-code-test).
 
-# VolvoFrontEndCodingChallenge
+# About
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
 
